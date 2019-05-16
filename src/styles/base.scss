@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// 快速的浮动类
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+// 移动端不用写
+.clearfix {
+  zoom: 1;
+}
+
+// 去除input的 默认样式
+input {
+  border: none;
+  outline: none;
+}
+
+//文字超出宽度显示省略号 单行
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsisMore {
+  //文字超出宽度显示省略号 多行
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  //   -webkit-line-clamp: 2;//行数
+  overflow: hidden;
+  white-space: normal;
+}
