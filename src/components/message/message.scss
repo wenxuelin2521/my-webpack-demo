@@ -1,0 +1,33 @@
+$color-white: #fff;
+$color-success: #04844b;
+$color-warning: #ffb75d;
+$color-danger: #c23934;
+$color-info: #54698d;
+
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+
+.my-message-component {
+  font-family: PingFang SC;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  min-width: 520px;
+  padding: 13px 22px;
+  background-color: $color-white;
+  box-shadow: $box-shadow-base;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: opacity 0.3s, transform 0.4s;
+  overflow: hidden;
+}
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.4s ease;
+}
